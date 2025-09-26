@@ -32,6 +32,9 @@
             display: flex;
             align-items: center;
             min-height: 100vh;
+            /* New background image properties */
+            background: url('bg-img/pexels-andre-furtado-43594-1264210.jpg') no-repeat center center;
+            background-size:cover;
         }
         .hero-video {
             position: absolute;
@@ -166,16 +169,12 @@
     </nav>
     
     <header class="hero-section text-white" id="home">
-        <video autoplay loop muted playsinline class="hero-video">
-            <source src="videos/205468-926967226.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="container mx-auto text-center px-6 hero-content">
-            <h1 class="text-4xl md:text-7xl font-extrabold mb-4 tracking-tight">Capturing Moments, Creating Art</h1>
-            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-brand-gray">We transform your precious moments into timeless, cinematic memories. Specializing in portrait, landscape, and event photography.</p>
-            <a href="#gallery" class="bg-brand-accent hover:bg-yellow-600 text-brand-dark font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 text-lg shadow-xl hover:shadow-2xl">Explore My Work</a>
-        </div>
-    </header>
+    <div class="container mx-auto text-center px-6 hero-content">
+        <h1 class="text-4xl md:text-7xl font-extrabold mb-4 tracking-tight">Capturing Moments, Creating Art</h1>
+        <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-brand-gray">We transform your precious moments into timeless, cinematic memories. Specializing in portrait, landscape, and event photography.</p>
+        <a href="#gallery" class="bg-brand-accent hover:bg-yellow-600 text-brand-dark font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 text-lg shadow-xl hover:shadow-2xl">Explore My Work</a>
+    </div>
+</header>
 
     <main class="container mx-auto px-6 py-20">
 
@@ -215,29 +214,50 @@
         </section>
 
         <section id="gallery" class="my-24 scroll-mt-20 reveal-element">
-            <h2 class="text-4xl font-bold text-center text-brand-light mb-4">My Portfolio & Philosophy</h2>
-            <p class="text-center max-w-2xl mx-auto mb-12 text-brand-gray">Experience the diverse range of my work and learn about the passion behind each frame.</p>
+            <h2 class="text-4xl font-bold text-center text-brand-light mb-4">My Portfolio</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12 text-brand-gray">Explore the diverse range of moments I love to capture. Each category tells a unique story.</p>
             
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-3/5 gallery-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1923&auto=format&fit=crop" alt="Portrait photography" class="gallery-image active">
-                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop" alt="Landscape photography" class="gallery-image">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop" alt="Wedding photography" class="gallery-image">
-                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop" alt="Nature photography" class="gallery-image">
-                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2070&auto=format&fit=crop" alt="Event photography" class="gallery-image">
-                </div>
-                <div class="md:w-2/5 text-center md:text-left">
-                    <h3 class="text-2xl font-bold text-brand-light mb-4">The Art of Seeing</h3>
-                    <p class="text-brand-gray leading-relaxed mb-6">
-                        My photography is more than just taking pictures; it's about seeing the world through a unique lens. I specialize in capturing the unspoken stories, the fleeting emotions, and the profound beauty in everyday moments. From the grand sweeping vistas of nature to the intimate expressions of a portrait, I aim to create images that evoke feeling and stand the test of time.
-                    </p>
-                    <p class="text-brand-gray leading-relaxed mb-6">
-                        Each project is approached with careful consideration and a commitment to understanding your vision. Whether it's a personal milestone, a commercial venture, or simply a desire to capture beauty, Photon Dreams is dedicated to delivering exceptional results that exceed your expectations.
-                    </p>
-                    <a href="#contact" class="inline-block bg-brand-accent hover:bg-yellow-600 text-brand-dark font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Book a Session</a>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="baby.html" class="group relative block h-80 rounded-lg overflow-hidden shadow-2xl">
+                    <img src="babyphotos/pexels-kelvinocta16-1973270.jpg" alt="A cute baby smiling" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-3xl font-bold text-white">Baby Photos</h3>
+                        <p class="text-white/80 mt-2">View Gallery &rarr;</p>
+                    </div>
+                </a>
+
+                <a href="wedding.html" class="group relative block h-80 rounded-lg overflow-hidden shadow-2xl">
+                    <img src="weddingphotos/pexels-vikashkr50-27155552.jpg" alt="A bride and groom at their wedding" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-3xl font-bold text-white">Wedding Photos</h3>
+                        <p class="text-white/80 mt-2">View Gallery &rarr;</p>
+                    </div>
+                </a>
+
+                <a href="party.html" class="group relative block h-80 rounded-lg overflow-hidden shadow-2xl">
+                    <img src="partphotos/pexels-wendywei-1190298.jpg" alt="People having fun at a party" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-3xl font-bold text-white">Party Photos</h3>
+                        <p class="text-white/80 mt-2">View Gallery &rarr;</p>
+                    </div>
+                </a>
+
+                <a href="portrait.html" class="group relative block h-80 rounded-lg overflow-hidden shadow-2xl">
+                    <img src="portraitphotos/pexels-vikashkr50-27155545.jpg" alt="A closeup portrait of a man" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-3xl font-bold text-white">Portrait Photos</h3>
+                        <p class="text-white/80 mt-2">View Gallery &rarr;</p>
+                    </div>
+                </a>
             </div>
         </section>
+
+        
+        
 
         <section id="contact" class="my-24 scroll-mt-20 reveal-element">
     <div class="text-center mb-16">

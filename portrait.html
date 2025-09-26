@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Photography | Photon Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0D0D0D', 'brand-light': '#F5F5F5',
+                        'brand-accent': '#EAB308', 'brand-gray': '#A3A3A3',
+                    }
+                }
+            }
+        }
+    </script>
+    <style> body { font-family: 'Inter', sans-serif; background-color: #0D0D0D; } </style>
+</head>
+<body class="bg-brand-dark text-brand-light">
+
+    <nav class="bg-brand-dark/70 backdrop-blur-lg shadow-lg sticky top-0 w-full z-30">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand-light hover:text-brand-accent transition-colors duration-300">Photon Dreams</a>
+            <div>
+                <a href="index.html#gallery" class="text-brand-gray hover:text-brand-light transition-colors">&larr; Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-5xl font-extrabold text-center mb-4 text-brand-light">Portrait Photography</h1>
+        <p class="text-center max-w-2xl mx-auto mb-12 text-brand-gray">Capturing the innocent smiles and precious moments of early life.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden rounded-lg"><img src="portraitphotos/pexels-hd_studio_-balotra-296479642-34009460.jpg" alt="Baby photo 1" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+            <div class="group relative overflow-hidden rounded-lg"><img src="portraitphotos/pexels-impresio-studio-2155869824-33934912.jpg" alt="Baby photo 2" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+            <div class="group relative overflow-hidden rounded-lg"><img src="portraitphotos/pexels-manjeet-singh-yadav-462762-1162983.jpg" alt="Baby photo 3" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+            <div class="group relative overflow-hidden rounded-lg"><img src="portraitphotos/pexels-ravi-roshan-2875998-14758778.jpg" alt="Baby photo 4" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+            <div class="group relative overflow-hidden rounded-lg"><img src="babyphotos/pexels-vika-glitter-392079-1648377.jpg" alt="Baby photo 5" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+            <div class="group relative overflow-hidden rounded-lg"><img src="portraitphotos/pexels-vikashkr50-27155545.jpg" alt="Baby photo 6" class="w-full h-full object-cover aspect-square group-hover:scale-110 transition-transform duration-500 ease-in-out"/></div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-8 mt-16">
+        <div class="container mx-auto text-center text-brand-gray">
+            <p>&copy; 2025 Photon Dreams. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
